@@ -1,0 +1,89 @@
+.search-add-product, .search-customer {
+    display: flex;
+    justify-content: space-between;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+tbody tr:hover {
+    background-color: #d8d8d8;
+    transition: 0.3s ease;
+}
+#search-product-form input, .search-customer input, .search-customer select {
+    background: none;
+    color: black;
+    border: 1px solid teal;
+    padding: 5px 6px;
+    width: 200px;
+    border-radius: 4px;
+}
+#search-product-form input:focus, .search-customer input:focus {
+    background: none;
+    width: 300px;
+    transition: 0.5s ease;
+}
+.errors {
+    color: red;
+    display: block;
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.success {
+    color: green;
+    display: block;
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.product-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+.product-image:hover {
+    transform: scale(1.1);
+    transition: 0.4s ease-in;
+}
+.pagination {
+    display: block;
+    text-align: center;
+}
+.pagination a {
+    margin: 0 20px;
+}
+#img-drag {
+    width: 350px;
+    margin:auto;
+    margin-top: 20px;
+}
+#img-bars {
+    margin-right: 20px;
+}
+#image_to_be_upload {
+    width: 100px;
+    height: 100px;
+    margin-top:20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+#delete-icon {
+    margin: 0 20px;
+    display:none;
+}
+#image_preview {
+    display: block;
+    text-align: center;
+    overflow: auto;
+}

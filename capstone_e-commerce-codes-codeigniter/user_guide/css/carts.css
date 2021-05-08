@@ -1,0 +1,59 @@
+.container {
+    margin-top: 100px;
+}
+.update-item, .remove-item {
+    font-size: 14px;
+}
+.shopping-cart {
+    margin: 0;
+}
+.shopping-cart li {
+    display: block;
+}
+.shopping-cart li a {
+    color: white;
+    text-decoration: none;
+}
+.shopping-cart li a span {
+    color: red;
+    font-size: 20px;
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgba(0, 123, 255, .25)
+}
+.btn-secondary:focus {
+    box-shadow: 0 0 0 0rem rgba(108, 117, 125, .5)
+}
+.close:focus {
+    box-shadow: 0 0 0 0rem rgba(108, 117, 125, .5)
+}
+.total_price {
+    text-align: center;
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+    padding: 10px;
+}
+.errors {
+    color: red;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.success {
+    color: green;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}

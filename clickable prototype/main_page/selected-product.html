@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo eCommerce Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/flexslider.css" type="text/css">
+    <link rel="stylesheet" href="./css/show-product.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Dojo eCommerce</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <ul class="shopping-cart">
+            <li class="nav-item dropdown">
+                <a href="./carts.html" ><i class="fas fa-cart-arrow-down fa-2x"></i> Shopping Cart<span>(2)</span></a>
+            </li>  
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <section class="breakfast-menu">
+            <div class="row breakfast-row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="breakfast-menu-content">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="left-image">
+                                    <img src="../admin/images/products/fruit-salad-img1.jpg" alt="Breakfast">
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <h2>Fruit Salad</h2>
+                                <div id="owl-breakfast" class="owl-carousel owl-theme">
+                                    <div class="item col-md-12">
+                                        <div class="food-item">
+                                            <div class="flexslider">
+                                                <ul class="slides">
+                                                    <li>
+                                                        <img class="card-img-top" src="../admin/images/products/fruit-salad-img1.jpg">
+                                                    </li>
+                                                    <li>
+                                                        <img class="card-img-top" src="../admin/images/products/fruit-salad-img2.jpg">
+                                                    </li>
+                                                    <li>
+                                                        <img class="card-img-top" src="../admin/images/products/fruit-salad-img3.jpg">
+                                                    </li>
+                                                    <li>
+                                                        <img class="card-img-top" src="../admin/images/products/fruit-salad-img4.jpg">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="text-content">
+                                                <h5>Description:</h5>
+                                                <p>Fruit salad is a dish consisting of various kinds of fruit, sometimes served in a liquid, either their own juices or syrup. In different forms, fruit salad can be served as an appetizer, a side salad, or a dessert.</p>
+                                            </div>
+                                            <div class="price">
+                                                <form action="#" method="POST">
+                                                    <h5>Price: ₱95.5</h5>
+                                                    <label for="quantity">Quantity:</label>
+                                                    <input type="number" name="quantity" id="quantity" min="1" max="5" required>
+                                                    <input type="submit" value="Buy">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <a href="./product-page.html" class="btn btn-danger mr-5 go-back">Go Back To Menu</a>
+</div> <!-- end container -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./js/jquery.flexslider.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.flexslider').flexslider();
+        });
+    </script>
+</body>
+</html>

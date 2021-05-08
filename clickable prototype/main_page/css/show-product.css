@@ -1,0 +1,80 @@
+section.breakfast-menu {
+	margin-top: 100px;
+}
+section.breakfast-menu .price {
+	right: 15px;
+}
+.breakfast-menu-content {
+	background-color: #f2f6ff;
+	padding: 30px 0px 30px 30px;
+}
+.breakfast-menu-content .left-image img {
+	width: 105%;
+    height: 538px;
+	overflow: hidden;
+}
+.breakfast-menu-content .left-image {
+	margin: -30px 0px -30px -30px;
+}
+.breakfast-menu-content #owl-breakfast {
+	margin-left: -15px;
+}
+.breakfast-menu-content h2 {
+	margin-top: 0px;
+	margin-bottom: 30px;
+	padding-bottom: 8px;
+	font-family: 'Spectral', serif;
+	font-size: 28px;
+	width: 94.5%;
+	border-bottom: 1px solid #d9dde5;
+	color: #121212;
+}
+.breakfast-row {
+    display: flex;
+    justify-content: center;
+}
+form input[type='submit'] {
+    padding: 10px;
+    margin-left: 10px;
+    width: 100px;
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+form input[type='submit']:hover {
+    transform: scale(1.1);
+    background-color: #fb5849;
+    transition: 0.8s ease;
+}
+.shopping-cart {
+    margin: 0;
+}
+.shopping-cart li {
+    display: block;
+}
+.shopping-cart li a {
+    color: white;
+    text-decoration: none;
+}
+.shopping-cart li a span {
+    color: red;
+    font-size: 20px;
+}
+.errors {
+    color: red;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.go-back {
+    width: 160px;
+    margin: 20px 0 0 100px;
+}

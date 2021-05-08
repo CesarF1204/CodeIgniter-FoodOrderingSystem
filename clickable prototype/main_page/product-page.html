@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo eCommerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main-page.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Dojo eCommerce</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <ul class="shopping-cart">
+            <li class="nav-item dropdown">
+                <a href="./carts.html" ><i class="fas fa-cart-arrow-down fa-2x"></i> Shopping Cart<span>(2)</span></a>
+            </li>  
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <form id="search-product-form" action="#" method="POST">
+        <input type="text" name="product_name" id="search_product_name" placeholder="Search product name...">
+        <a href="#" id="breakfast"><input type="checkbox" name="category_name" value="">Breakfast(2)</a>
+        <a href="#" id="lunch"><input type="checkbox" name="category_name" value="">Lunch(2)</a>
+        <a href="#" id="dinner"><input type="checkbox" name="category_name" value="">Dinner(1)</a>
+    </form>
+<!-- ***** Menu Area Starts ***** -->
+<section class="section" id="products">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 offset-lg-4 text-center">
+                <div class="section-heading">
+                    <h6>Francisco's Restaurant</h6>
+                    <h2>This Week’s Special Meal Offers</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <section class='tabs-content'>
+                    <article>
+                        <div class="row">
+<!--  -->
+                            <div class="col-lg-6 product-list">
+                                <div class="row">
+                                    <div class="left-list">
+                                        <div class="col-lg-12">
+                                            <div class="tab-item">
+                                                <img src="../admin/images/products/chicken-salad-img3.png" alt="">
+                                                <h4>Fresh Chicken Salad</h4>
+                                                <p>This family favorite chicken salad is made with celery, bell pepper, green olives, apple, lettuce, and mayo—plus a secret ingredient that makes all the difference!</p>
+                                                <div class="price">
+                                                    <h6>₱199.99</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="./selected-product.html">Order Now</a>
+                            </div>    
+<!--  -->
+                            <div class="col-lg-6 product-list">
+                                <div class="row">
+                                    <div class="left-list">
+                                        <div class="col-lg-12">
+                                            <div class="tab-item">
+                                                <img src="../admin/images/products/egg-omelette-img3.jpg" alt="">
+                                                <h4>Eggs Omelette</h4>
+                                                <p>In cuisine, an omelette or omelet is a dish made from beaten eggs, fried with butter or oil in a frying pan. It is quite common for the omelette to be folded around fillings such as cheese, chives, vegetables, mushrooms, meat, or some combination of the above.</p>
+                                                <div class="price">
+                                                    <h6>₱45</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="./selected-product.html">Order Now</a>
+                            </div>
+                            <div class="col-lg-6 product-list">
+                                <div class="row">
+                                    <div class="left-list">
+                                        <div class="col-lg-12">
+                                            <div class="tab-item">
+                                                <img src="../admin/images/products/fruit-salad-img1.jpg" alt="">
+                                                <h4>Fruit Salad</h4>
+                                                <p>Fruit salad is a dish consisting of various kinds of fruit, sometimes served in a liquid, either their own juices or syrup. In different forms, fruit salad can be served as an appetizer, a side salad, or a dessert.</p>
+                                                <div class="price">
+                                                    <h6>₱95.5</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="./selected-product.html">Order Now</a>
+                            </div>
+                            <div class="col-lg-6 product-list">
+                                <div class="row">
+                                    <div class="left-list">
+                                        <div class="col-lg-12">
+                                            <div class="tab-item">
+                                                <img src="../admin/images/products/pork-adobo-img1.jpg" alt="">
+                                                <h4>Fresh Chicken Salad</h4>
+                                                <p>Pork Adobo made with succulent pork belly braised in vinegar, soy sauce, garlic, and onions. A delicious balance of salty and savory, this hearty stew is Philippine’s national dish for a good reason!</p>
+                                                <div class="price">
+                                                    <h6>₱149.78</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="./selected-product.html">Order Now</a>
+                            </div>
+                            <div class="col-lg-6 product-list">
+                                <div class="row">
+                                    <div class="left-list">
+                                        <div class="col-lg-12">
+                                            <div class="tab-item">
+                                                <img src="../admin/images/products/smoked-salmon-sandwich-img2.jpg" alt="">
+                                                <h4>Smoked Salmon Sandwich</h4>
+                                                <p>The sandwich itself is pretty simple, featuring ingredients such as cream cheese, smoked salmon, avocados (because they’re the best in sandwiches), tomatoes, radishes and alfalfa sprouts in between 2 slices of delicious whole wheat grain bread, but simple doesn’t make it boring! This sandwich is full of fresh flavor and is sure to satisfy.</p>
+                                                <div class="price">
+                                                    <h6>₱55</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="./selected-product.html">Order Now</a>
+                            </div>
+                            <div class="col-lg-6 product-list">
+                                <div class="row">
+                                    <div class="left-list">
+                                        <div class="col-lg-12">
+                                            <div class="tab-item">
+                                                <img src="../admin/images/products/chicken-salad-img3.png" alt="">
+                                                <h4>Fresh Chicken Salad</h4>
+                                                <p>This family favorite chicken salad is made with celery, bell pepper, green olives, apple, lettuce, and mayo—plus a secret ingredient that makes all the difference!</p>
+                                                <div class="price">
+                                                    <h6>₱199.99</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="./selected-product.html">Order Now</a>
+                            </div>
+                        </div>
+                    </article>  
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ***** Menu Area Ends ***** -->
+</div> <!-- end container -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

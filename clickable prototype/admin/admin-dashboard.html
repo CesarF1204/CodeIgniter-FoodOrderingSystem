@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/admin-products.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+<!-- admin nav -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">DASHBOARD</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a href="./admin-dashboard.html" class="nav-link">Orders</a>
+            </li>
+            <li class="nav-item">
+                <a href='./admin-products.html' class="nav-link">Products</a>
+            </li>
+        </ul>
+        <ul class="m-0">
+            <li class="nav-item dropdown d-block">
+                <a class="nav-link dropdown-toggle text-white"
+                    href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                    Cesar Francisco
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a style="font-size: 13px" class="dropdown-item" href="./admin-changepassword.html">Change Password</a>
+                    <div class="dropdown-divider"></div>
+                    <a style="font-size: 13px" class="dropdown-item" href="#">Logout</a>
+                </div>
+            </li>  
+        </ul>
+    </div>
+</nav>
+<br><br><br>
+<!-- end nav -->
+<div class="container">
+        <form class="search-customer" id="search-customer-form" action="/admins/search_customers" method="post">
+            <input type="text" name="customer_name" id="search" placeholder="Search Order...">
+            <select name="order_status">
+                <option value="" selected>Select All</option>
+                <option value="1">Order in process</option>
+                <option value="2">Delivered</option>
+                <option value="3">Canceled</option>
+            </select>
+        </form>
+    <!-- load partials -->
+    <table>
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Billing Address</th>
+                <th>Total</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+    
+            <tr>
+                <td><a href="./admin-orderdetail.html">5</a></td>
+                <td>Cesar Francisco</td>
+                <td>05/08/2021</td>
+                <td>Purok #10, Forestgold, Bakakeng Phase 1, Baguio City, Benguet, 2600</td>
+                <td>₱1390.94</td>
+                <td>
+                <form action="#" method="POST">
+                    <select class='form-control' name="order_status_id">
+                        <option value="" selected>-- Delivered --</option>
+                        <option value="">Order in process</option>
+                        <option value="">Delivered</option>
+                        <option value="">Cancelled</option>
+                    </select>
+                    <input class='btn btn-info mt-1' type="submit" value="Update">  
+                </form>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="./admin-orderdetail.html">4</a></td>
+                <td>Pedro Penduko</td>
+                <td>05/08/2021</td>
+                <td>Purok #10, Forestgold, Bakakeng Phase 1, purok 7, Baguio City, Benguet, 2600</td>
+                <td>₱199.99</td>
+                <td>
+                <form action="#" method="POST">
+                    <select class='form-control' name="order_status_id">
+                        <option value="" selected>-- Cancelled --</option>
+                        <option value="">Order in process</option>
+                        <option value="">Delivered</option>
+                        <option value="">Cancelled</option>
+                    </select>
+                    <input class='btn btn-info mt-1' type="submit" value="Update">  
+                </form>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="./admin-orderdetail.html">3</a></td>
+                <td>Sheldon Young</td>
+                <td>05/08/2021</td>
+                <td>Purok #10, Forestgold, Bakakeng Phase 1, Baguio City, Benguet, 2600</td>
+                <td>₱286.50</td>
+                <td>
+                <form action="#" method="POST">
+                    <select class='form-control' name="order_status_id">
+                        <option value="" selected>-- Delivered --</option>
+                        <option value="">Order in process</option>
+                        <option value="">Delivered</option>
+                        <option value="">Cancelled</option>
+                    </select>
+                    <input class='btn btn-info mt-1' type="submit" value="Update">  
+                </form>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="./admin-orderdetail.html">2</a></td>
+                <td>Kathleen Garcia</td>
+                <td>05/08/2021</td>
+                <td>Purok #10, Forestgold, Bakakeng Phase 1, Baguio City, Benguet, 2600</td>
+                <td>₱1190.95</td>
+                <td>
+                <form action="#" method="POST">
+                    <select class='form-control' name="order_status_id">
+                        <option value="" selected>-- Delivered --</option>
+                        <option value="">Order in process</option>
+                        <option value="">Delivered</option>
+                        <option value="">Cancelled</option>
+                    </select>
+                    <input class='btn btn-info mt-1' type="submit" value="Update">  
+                </form>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="./admin-orderdetail.html">1</a></td>
+                <td>Emilio Agbayani</td>
+                <td>05/08/2021</td>
+                <td>Purok #10, Forestgold, Bakakeng Phase 1, Baguio City, Benguet, 2600</td>
+                <td>₱190.94</td>
+                <td>
+                <form action="#" method="POST">
+                    <select class='form-control' name="order_status_id">
+                        <option value="" selected>-- Cancelled --</option>
+                        <option value="">Order in process</option>
+                        <option value="">Delivered</option>
+                        <option value="">Cancelled</option>
+                    </select>
+                    <input class='btn btn-info mt-1' type="submit" value="Update">  
+                </form>
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <br>
+    <p class='pagination'>
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+        <a href="">5</a>
+    </p>
+</div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('li.active').removeClass('active');
+            $('a[href="' + location.pathname + '"]').closest('li').addClass('active'); 
+        });
+</script>
+</body>
+</html>
